@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset="utf-8" />
+    <meta http-equiv="content-language" content="pl" />
+    <meta name="author" content="Mateusz Derbin" />
+    <title>Samoloty moją pasją</title>
+</head>
+<style>
+    body {
+        background-image: url('https://static.prsa.pl/images/a754a50d-8cfe-444a-932a-928a57a65a48.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 90% 90%;
+        background-position: center;
+    }
+</style>
+<style>
+    a:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        display: block;
+    }
+
+    a:hover, a:active {
+        background-color: red;
+    }
+</style>
+<style>
+    a::backdrop {
+        background-color: white;
+        color: white;
+        background-size: 70% 90%;
+    }
+</style>
+
+<body>
+
+    <table style="width:100%">
+        <tr>
+            <a href="../Main.html" target="_self">⬅ Powrót do menu</a>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    <center>
+        
+        <form style="background-color:white; padding: 20px; display:block; width: 20%"
+              action="mailto:marder4707@gmail.com">
+            <h2>Wyślij wiadomość</h2>
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Twój e-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Wiadomość:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+            <input type="submit" value="Wyślij">
+        </form>
+    </center>
+</body>
+</html>
