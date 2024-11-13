@@ -1,0 +1,90 @@
+﻿<table style="width:100%">
+    <tr>
+        <th><a href="Index.php?idp=History" target="_self">Historia</a></th>
+
+        <th><a href="Index.php?idp=Records" target="_self">Rekordy</a></th>
+
+        <th><a href="Index.php?idp=Exp" target="_self">Eksperymenty</a></th>
+
+        <th><a href="Index.php?idp=galeria" target="_self">Galeria zdjęć</a></th>
+
+        <th><a href="Index.php?idp=Form" target="_self">Kontakt</a></th>
+
+        <th><a href="Index.php?idp=Filmy" target="_self">Filmy</a></th>
+    </tr>
+
+</table>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="transbox">
+    <h1>
+        Witamy na stronie na której możesz poznać historie powstania samolotów, <br />
+        rekordy, ciekawstki i eksperymentalne wersje samolotów.
+    </h1>
+</div>
+
+<div class="clock">
+    <div id="zegarek"></div>
+    <div id="data"></div>
+</div>
+
+<div class="option">
+
+    <FORM METHOD="POST" NAME="background">
+        <input TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')">
+        <input TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')" />
+    </FORM>
+</div>
+
+<center>
+    <div id="animacjaTestowa1" class="test-block">Kliknij, a się powiększe</div>
+
+
+    <script>
+        $("#animacjaTestowa1").on("click", function () {
+            $(this).animate({
+                width: "500px",
+                opacity: 0.4,
+                fontsize: "3em",
+                borderwidth: "10px"
+            }, 1500);
+        });
+    </script>
+
+    <div id="animacjaTestowa2" class="test-block">Najedż kursorem, a się powiększe</div>
+
+    <script>
+        $("#animacjaTestowa2").on({
+            "mouseover": function () {
+                $(this).animate({
+                    width: 300
+                }, 800);
+            },
+            "mouseout": function () {
+                $(this).animate({
+                    width: 200
+                }, 800);
+            }
+        });
+    </script>
+
+    <div id="animacjaTestowa3" class="test-block">Klikaj, abym urósł</div>
+
+    <script>
+        $("#animacjaTestowa3").on("click", function () {
+            if (!$(this).is(":animated")) {
+                $(this).animate({
+                    width: "+=" + 50,
+                    height: "+=" + 10,
+
+                    duration: 3000
+                });
+            }
+        });
+    </script>
+</center>
