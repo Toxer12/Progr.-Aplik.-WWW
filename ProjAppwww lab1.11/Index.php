@@ -10,6 +10,8 @@ include('cfg.php');
 // w przeciwnym razie ustawiamy domyślną stronę (np. strona o ID 1)
 if ($_GET['page']==14) {
     include('koszykS.php');
+} elseif ($_GET['page']==3) {
+    include('contact.php');  // Załadowanie strony wskazanej w parametrze 'page'
 } elseif (isset($_GET['page'])) {
     include('showpage.php');  // Załadowanie strony wskazanej w parametrze 'page'
 } else {

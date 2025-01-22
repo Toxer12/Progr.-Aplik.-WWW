@@ -1,3 +1,15 @@
+
+<table style="width:100%">
+        <tr>
+            <a href="Index.php?idp=" target="_self">⬅ Powrót do menu</a>
+        </tr>
+    </table>
+<br />
+<br />
+<br />
+<br />
+<br />
+<center>
 <?php
 
 // Funkcja ta generuje formularz kontaktowy
@@ -5,8 +17,8 @@
 
 function PokazKontakt() {
     echo '
-    <h2>Formularz Kontaktowy</h2>
-    <form method="post" action="contact.php">
+    <form method="post" action="contact.php" style="background-color:white; padding: 20px; display:block; width: 20%">
+<h2>Formularz Kontaktowy</h2>
         <label>Imię i nazwisko: <input type="text" name="name" required></label><br>
         <label>Email: <input type="email" name="email" required></label><br>
         <label>Temat: <input type="text" name="subject" required></label><br>
@@ -84,8 +96,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 } else {
     PokazKontakt();
     echo '
-    <h2>Przypomnienie hasła</h2>
-    <form method="post" action="contact.php">
+    <form method="post" action="contact.php" style="background-color:white; padding: 20px; display:block; width: 20%">
+<h2>Przypomnienie hasła</h2>
         <label>Podaj swój email: <input type="email" name="email" required></label><br>
         <input type="submit" name="remind_password" value="Przypomnij hasło">
     </form>
